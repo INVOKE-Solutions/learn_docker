@@ -1,4 +1,4 @@
-# Learn Docker
+# Learn Docker 🐳
 - Hands-on repository to learn about Docker
 
 # Getting Started
@@ -36,10 +36,31 @@ in order to install Docker. [See WSL installation guide](https://www.youtube.com
    hello wei
    hello wei
    ```
-6. Congratulation you has successfully build a container and execute it!
+6. Show all container with command
+   ```
+   docker ps -a
+   ```
+   Output will show the existing container 
+   ```
+   CONTAINER ID   IMAGE          COMMAND                  CREATED
+   8a203ca5aa3d   hello_docker   "/bin/sh -c 'python …"   5 seconds 
+   ```
+7. To delete the container, run command
+   ```Docker
+   docker rm 8a203ca5aa3d
+   ```
+   `docker rm <container_id>`
+8. After than you can delete the image with 
+   ```Docker
+   docker rmi 5c8a423dfed9
+   ```
+   `docker rmi <image_id>`
+
+> NOTE: To delete image, you need to delete the container first (due to container is the runnable instance of image)
+10. Congratulation you has successfully build a with Docker! 🐳🎉
 
 # Use Case
-- Deploying REST API with FastAPI with Docker to ECR with Fargate on ECS [see tutorial](https://beabetterdev.com/2023/01/29/ecs-fargate-tutorial-with-fastapi/)
+- Deploying REST API with FastAPI, wrapped with Docker to ECR with Fargate on ECS [see tutorial](https://beabetterdev.com/2023/01/29/ecs-fargate-tutorial-with-fastapi/)
 
 
 # Source
