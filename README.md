@@ -32,9 +32,9 @@ in order to install Docker. [See WSL installation guide](https://www.youtube.com
    ```
 5. The following output should shown
    ```
-   hello world
-   hello world
-   hello world
+   hello wei
+   hello wei
+   hello wei
    ```
 6. Congratulation you has successfully build a container and execute it!
 
