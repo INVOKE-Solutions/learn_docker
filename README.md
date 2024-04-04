@@ -63,7 +63,7 @@ in order to install Docker. [See WSL installation guide](https://www.youtube.com
    `docker rmi <image_id>`
 
 > NOTE: To delete image, you need to delete the container first (due to container is the runnable instance of image)
-10. Congratulation you has successfully build a with Docker! 🐳🎉
+10. Congratulation you has successfully build with Docker! 🐳🎉
 
 # Use Case
 - Deploying REST API with FastAPI, wrapped with Docker to ECR with Fargate on ECS [see tutorial](https://beabetterdev.com/2023/01/29/ecs-fargate-tutorial-with-fastapi/)
