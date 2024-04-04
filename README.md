@@ -2,22 +2,28 @@
 - Hands-on repository to learn about Docker
 
 # Getting Started
-## WSL Installation
+
+## Run on Playground
+- No installation need, just use the [sandbox](https://labs.play-with-docker.com/)!
+
+## Local Development
+### WSL Installation
 - Before you can setup Docker on your local machine, you need to setup Windows Subsystem for Linux (WSL)
 in order to install Docker. [See WSL installation guide](https://www.youtube.com/watch?v=_fntjriRe48&t=1s)
 
-## Docker Installation
+### Docker Installation
 - Install Docker [See Docker installation guide](https://www.youtube.com/watch?v=5RQbdMn04Oc&list=PLhfrWIlLOoKNMHhB39bh3XBpoLxV3f0V9&index=2)
 
 # Let's Dock!
 
 1. Git clone this repository in [Docker Sandbox](https://labs.play-with-docker.com/).
-2. Build Docker image with the following command (please don't forget to put the period on end of command!)
+2. `cd` into `/learn_docker`.
+3. Build Docker image with the following command (please don't forget to put the period on end of command!)
    ```Docker
    docker build -t hello-docker .
    ```
    Wait a couple of seconds before the image is completely build.
-3. Check whether the image has been build with
+4. Check whether the image has been build with
    ```Docker
    docker image ls
    ```
@@ -26,17 +32,17 @@ in order to install Docker. [See WSL installation guide](https://www.youtube.com
    REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
    hello_docker   latest    5c8a423dfed9   16 minutes ago   222MB
    ```
-4. Spin the new container from the image with
+5. Spin the new container from the image with
    ```Docker
    docker run hello_docker 
    ```
-5. The following output should shown
+6. The following output should shown
    ```
    hello wei
    hello wei
    hello wei
    ```
-6. Show all container with command
+7. Show all container with command
    ```
    docker ps -a
    ```
@@ -45,12 +51,12 @@ in order to install Docker. [See WSL installation guide](https://www.youtube.com
    CONTAINER ID   IMAGE          COMMAND                  CREATED
    8a203ca5aa3d   hello_docker   "/bin/sh -c 'python …"   5 seconds 
    ```
-7. To delete the container, run command
+8. To delete the container, run command
    ```Docker
    docker rm 8a203ca5aa3d
    ```
    `docker rm <container_id>`
-8. After than you can delete the image with 
+9. After than you can delete the image with 
    ```Docker
    docker rmi 5c8a423dfed9
    ```
