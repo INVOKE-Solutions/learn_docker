@@ -11,7 +11,7 @@ in order to install Docker. [See WSL installation guide](https://www.youtube.com
 
 # Let's Dock!
 
-1. Git clone this repository
+1. Git clone this repository in [Docker Sandbox](https://labs.play-with-docker.com/).
 2. Build Docker image with the following command (please don't forget to put the period on end of command!)
    ```Docker
    docker build -t hello-docker .
