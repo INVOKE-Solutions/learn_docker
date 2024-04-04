@@ -39,8 +39,11 @@ in order to install Docker. [See WSL installation guide](https://www.youtube.com
 6. Congratulation you has successfully build a container and execute it!
 
 # Use Case
-1. Deploying REST API with FastAPI with Docker to ECR with Fargate on ECS [see tutorial](https://beabetterdev.com/2023/01/29/ecs-fargate-tutorial-with-fastapi/)
+- Deploying REST API with FastAPI with Docker to ECR with Fargate on ECS [see tutorial](https://beabetterdev.com/2023/01/29/ecs-fargate-tutorial-with-fastapi/)
+
+
 # Source
 1. [Docker Curriculum](https://docker-curriculum.com/)
 2. [Dockerfile docs](https://docs.docker.com/reference/dockerfile/)
+3. [Play with Docker](https://www.docker.com/play-with-docker/)
 
